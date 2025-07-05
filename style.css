@@ -1,30 +1,56 @@
- body{
-           text-align: center;
-           margin: 0;
-           padding: 0;
-           box-sizing: border-box;
-           font-size: larger;
-        }
-        .todoContainer{
-            display: grid;
-            grid-template-columns: 200px 150px 100px;
-            column-gap: 10px;
-            row-gap: 10px;
-            margin-top: 10px;
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: larger;
+    font-family: Arial, sans-serif;
+}
 
-        }
-        #Add{
-            width: 50px;
-            background-color: green;
-            color: white;
-            border-radius: 5px;
-        }
-        #deleteItem{
-            background-color: rgb(218, 21, 21);
-            color: white;
-            border-radius: 5px;
-        }
-        .todoContent{
-            display: flex;
-            justify-content: center;
-        }
+.todoContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 20px;
+    padding: 0 10px;
+}
+
+#Add {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#deleteItem {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(218, 21, 21);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.todoContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ✅ Mobile Responsive (below 600px) */
+@media (max-width: 600px) {
+    .todoContainer {
+        grid-template-columns: 1fr;
+    }
+
+    #Add, #deleteItem {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
