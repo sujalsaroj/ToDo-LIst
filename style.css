@@ -42,8 +42,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-
-/* ✅ Mobile Responsive (below 600px) */
 @media (max-width: 600px) {
     .todoContainer {
         grid-template-columns: 1fr;
