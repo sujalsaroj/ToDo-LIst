@@ -1,0 +1,30 @@
+ body{
+           text-align: center;
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-size: larger;
+        }
+        .todoContainer{
+            display: grid;
+            grid-template-columns: 200px 150px 100px;
+            column-gap: 10px;
+            row-gap: 10px;
+            margin-top: 10px;
+
+        }
+        #Add{
+            width: 50px;
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+        }
+        #deleteItem{
+            background-color: rgb(218, 21, 21);
+            color: white;
+            border-radius: 5px;
+        }
+        .todoContent{
+            display: flex;
+            justify-content: center;
+        }
